@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #ca965c;
+  color: white;
+  padding-top: 1rem;
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+}
+
+header a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav {
+  margin-top: 10px;
+  float: right;
+  position: fixed;
+}
+
+header a:hover {
+  color: #5c3d2e;
+}
+
+#showcase {
+  min-height: 900px;
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f7d59c;
+}
+
+.details h1 {
+  margin-top: 200px;
+  font-family: "Courier New", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#name {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#gallery {
+  min-height: 900px;
+  display: grid;
+  background-color: #fefae0;
+  grid-template-columns: repeat(autofill, minmax(300px, 300px));
+  justify-content: center;
+  align-items: center;
+  column-gap: 35px;
+  row-gap: 30px;
+  font-size: 30px;
+}
+#highlight {
+  justify-content: center;
+  text-align: center;
+  color: #f7d59c;
+  text-transform: uppercase;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+#highlight-dark {
+  justify-content: center;
+  color: #f7d59c;
+  text-transform: uppercase;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#about {
+  text-align: center;
+  min-height: 500px;
+  background-color: #fefae0;
+}
+
+#about h1 {
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+#about p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f2bb7b;
+}
+
+#contact {
+  min-height: 500px;
+  box-sizing: border-box;
+  background-color: #fefae0;
+}
+#contact h1 {
+  margin-top: 90px;
+  font-size: 45px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  justify-content: center;
+}
+
+.cards > div {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 100px 75px;
+}
+.card-icon {
+  margin: 10px;
+  font-size: 40px;
+}
+
+.cards p {
+  font-size: 1.3rem;
+}
+
+#contact a {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+  color: white;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  margin: 2px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
+}
