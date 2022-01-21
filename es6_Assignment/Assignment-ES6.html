@@ -1,0 +1,54 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Open console in chrome Dev tools to see js</h1>
+        <script>
+            /*
+            actual code starts here
+            Refactor the following function into a one-liner:
+            const printName = (name) => {
+                                return “Hi” + name;
+                    }
+            */
+            //refactored code
+            const printName = name => "Hi "+name ;
+            
+            /* 
+                Rewrite the following code using template literals
+                const printBill = (name, bill) => {
+                                    return “Hi “ + name + “, please pay: “ + bill;
+                }
+            */
+            //after re-writing
+            const printBill = (name, bill) => `Hi ${name}, please pay: ${bill}`;
+            
+            /* 
+                Modify the following code such that the object properties are destructured and logged.
+                const person = {
+                                    name: “Noam Chomsky”,
+                                    age: 92
+                            }
+                        
+                let name = person.name;
+                let age = person.age;
+                console.log(name);
+                console.log(age);
+            */
+           //after modification
+           const person = {
+                            name: "Noam Chomsky",
+                            age: 92
+            }
+            const {name,age}=person;
+           console.log(name+" "+age);
+           let a=10;
+        function disp()
+        {
+            console.log(a);
+        }
+        disp();
+        </script>
+
+       
+    </body>
+</html>
