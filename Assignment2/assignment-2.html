@@ -1,0 +1,30 @@
+<html>
+
+<head></head>
+
+<body>
+    <p>Open console in chrome Dev Tools to view js</p>
+    <script>
+        //actual code starts here
+        function getData(uId) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    console.log("Fetched the data!");
+                    resolve("skc@gmail.com");
+                }, 4000);
+            });
+        }
+
+        async function display() {
+            console.log("start");
+            console.log("waiting for data to be fetched");
+            var email = await getData("skc");
+            console.log("Email id of the user id is: " + email);
+            console.log("end");
+        }
+
+        display();
+    </script>
+</body>
+
+</html>
