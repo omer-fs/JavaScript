@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Storage App</title>
+    <style>
+        .heading {
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .score {
+            margin: auto;
+            width: 50%;
+            border: 3px solid #023e8a;
+            padding: 10px;
+        }
+
+        .buttons {
+            margin: auto;
+            width: 50%;
+        }
+
+        #button {
+            background-color: #00b4d8;
+            padding: 5px 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Storage assignment</h1>
+    <div class="score">
+        <p>Local Score : <span id="localscore"></span></p>
+        <p>Session Score : <span id="sessionscore"></span></p>
+        <div class="buttons">
+            <button id="button">Increment Local & Session Storage Score</button>
+        </div>
+    </div>
+    <script>
+        var button = document.getElementById("button");
+        button.addEventListener("click", localStorageHanlder);
+        button.addEventListener("click", sessionStorageHandler);
+        if (localStorage.getItem("localResult") == null) {
+            localStorage.setItem("localResult", 0);
+        }
+        if (sessionStorage.getItem("sessionResult") == null) {
+            sessionStorage.setItem("sessionResult", 0)
+        }
+        document.getElementById("localscore").innerHTML = localStorage.getItem("localResult");
+        document.getElementById("sessionscore").innerHTML = sessionStorage.getItem("sessionResult");
+        function localStorageHanlder() {
+            console.log("hi");
+            let exisitingResult = parseInt(localStorage.getItem("localResult"));
+            exisitingResult = exisitingResult + 1;
+            localStorage.setItem("localResult", exisitingResult);
+            document.getElementById("localscore").innerHTML = localStorage.getItem("localResult");
+        }
+        function sessionStorageHandler() {
+            let exisitingResult = parseInt(sessionStorage.getItem("sessionResult"));
+            exisitingResult = exisitingResult + 1;
+            sessionStorage.setItem("sessionResult", exisitingResult);
+            document.getElementById("sessionscore").innerHTML = sessionStorage.getItem("sessionResult");
+        }
+    </script>
+</body>
+
+</html>
